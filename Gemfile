@@ -16,6 +16,7 @@ gem 'coffee-rails', '~> 4.1.0'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
+gem 'jquery-ui-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
@@ -38,7 +39,25 @@ group :development, :test do
 
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
+
+  gem 'better_errors', '~> 2.1', '>= 2.1.1'
+
+  gem 'rspec', '~> 3.6'
+  gem 'factory_girl_rails'
+  gem 'simplecov'
 end
+
+# API's
+gem 'faraday', '~> 0.12.1'
+gem 'nokogiri', '~> 1.7', '>= 1.7.2'
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+#UI and Forms
+gem 'bootstrap_form'
+gem 'bootstrap-sass'
+gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.2'
+
+#Pagination
+gem 'kaminari'
